@@ -1,4 +1,14 @@
+<div class="upper-text">
+  <h1>Explore o mundo dos <span>Pokémons</span> </h1>
+  <p>Descubra todas as espécies de Pokémons</p>
+</div>
+
 <form>
-  <input type="text" placeholder="Buscar Pokemon...">
-  <img src="assets/icons/search.svg" alt="Buscar Pokemon">
+  <input
+    type="text"
+    placeholder="Buscar Pokemon..."
+    #input
+    (keyup)="search(input.value)"
+  />
+  <img src="assets/icons/search.svg" alt="Buscar Pokemon" />
 </form>

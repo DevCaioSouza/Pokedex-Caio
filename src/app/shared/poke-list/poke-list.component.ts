@@ -21,4 +21,7 @@ export class PokeListComponent implements OnInit{
     )
   }
 
+  public getSearch(value: string){
+    console.log(value);
+  }
 }

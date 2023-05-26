@@ -1,10 +1,33 @@
 @import '../../../config-scss/rem-calc.scss';
 
 :host{
+  .upper-text{
+    position: relative;
+    margin-left: rem-calc(200);
+
+    font-size: rem-calc(50);
+    font-weight: 700;
+    color: var(--font-primary)
+  }
+
+  .upper-text span{
+    color: var(--secondary-color)
+  }
+
+  .upper-text p {
+    margin-bottom: rem-calc(20);
+    margin-top: rem-calc(20);
+    font-size: rem-calc(25);
+    font-weight: 500;
+  }
+
+
   form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    left: rem-calc(202);
+
+    max-width: rem-calc(600);
+
 
 
     padding: rem-calc(15) rem-calc(20);
@@ -16,8 +39,6 @@
       font-size: rem-calc(25);
       width: 95%;
       background: none;
-      border: none;
-      outline: none;
 
       color: var(--branco);
 
