@@ -2,6 +2,7 @@
 
 :host{
   display: flex;
+  flex-wrap: wrap;
 
   .pokemon{
     position: relative;
