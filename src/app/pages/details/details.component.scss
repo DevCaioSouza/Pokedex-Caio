@@ -77,15 +77,18 @@
 
 		@media (max-width: 420px) {
 			margin-top: rem-calc(10);
+      max-width: rem-calc(400);
 
 			.pokemon__names {
 				h1 {
-					font-size: rem-calc(20);
+          position: relative;
+          left: rem-calc(100);
+					font-size: rem-calc(25);
 				}
 
 				h2 {
 					top: rem-calc(35);
-					font-size: rem-calc(20);
+					font-size: rem-calc(30);
 				}
 			}
 
@@ -104,6 +107,10 @@
 					padding-top: rem-calc(50);
 				}
 			}
+
+      .btn{
+        width: 80vw;
+      }
 		}
 	}
 }
