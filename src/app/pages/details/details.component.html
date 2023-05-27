@@ -10,10 +10,14 @@
     </section>
 
     <section class="pokemon__status">
+      <div class="description">
+        <h3>Description:</h3>
+        {{ pokemon[1].flavor_text_entries[9].flavor_text }}
+      </div>
+
       <img
         [src]="pokemon[0].sprites.other.dream_world.front_default"
         [alt]="pokemon[0].name"
-        class="slideInDown"
       >
 
       <article class="pokemon__status__statistics fadeIn">

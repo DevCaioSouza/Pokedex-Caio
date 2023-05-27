@@ -3,9 +3,11 @@
 :host{
   .upper-text{
     position: relative;
-    margin-left: rem-calc(200);
+    margin: 0 auto;
 
-    font-size: rem-calc(50);
+    max-width: rem-calc(470);
+
+    font-size: rem-calc(35);
     font-weight: 700;
     color: var(--font-primary)
   }
@@ -17,26 +19,25 @@
   .upper-text p {
     margin-bottom: rem-calc(20);
     margin-top: rem-calc(20);
-    font-size: rem-calc(25);
+    font-size: rem-calc(20);
     font-weight: 500;
   }
 
 
   form{
     position: relative;
-    left: rem-calc(202);
+    margin: 0 auto;
 
     max-width: rem-calc(600);
 
-
-
-    padding: rem-calc(15) rem-calc(20);
+    padding: rem-calc(12) rem-calc(16);
     background: gray;
 
     border-radius: rem-calc(10);
 
     input{
-      font-size: rem-calc(25);
+      font-size: rem-calc(20);
+
       width: 95%;
       background: none;
 

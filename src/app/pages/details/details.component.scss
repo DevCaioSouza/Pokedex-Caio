@@ -2,56 +2,78 @@
 
 :host {
 	main {
-		margin-top: rem-calc(40);
+    position: relative;
+    margin: 0 auto;
+
     max-width: rem-calc(1000);
 
 		.pokemon__names {
-			position: relative;
-			display: flex;
 
-			height: 75px;
+			display: flex;
 
 			padding: 0 rem-calc(30);
 
 			h1 {
+        font-style: italic;
 				color: var(--font-primary);
 				font-size: rem-calc(50);
         font-weight: 700;
 				text-transform: capitalize;
+        position: relative;
+        top: rem-calc(50);
+        left: rem-calc(100);
 			}
 
       h2 {
         position: relative;
-        left: rem-calc(100);
-        font-size: rem-calc(60);
+        left: rem-calc(200);
+        font-size: rem-calc(50);
         color: var(--font-primary);
+        position: relative;
+        top: rem-calc(50);
 			}
 		}
 
 		.pokemon__status {
 			position: relative;
 
+      .description{
+        position: relative;
+        top: rem-calc(100);
+        margin: 0 auto;
+
+        max-width:rem-calc(400);
+
+        h3{
+          font-weight: 700;
+        }
+      }
+
 			img {
 				position: absolute;
+        right: 0;
+        transform: translate(-100%, 100%);
 
-				top: rem-calc(90);
-				left: rem-calc(600);
-				max-width: rem-calc(300);
+				max-width: rem-calc(200);
 			}
 
 			&__statistics {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+        margin: 0 auto;
 
 				background: var(--branco);
 
 				min-height: 43.9vh;
+        width: rem-calc(800);
+        max-width: 90vw;
 				margin-top: rem-calc(10);
+        margin-bottom: rem-calc(50);
 
 				padding: rem-calc(110) rem-calc(35) rem-calc(30);
 				border-radius: rem-calc(50);
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        box-shadow: var(--font-primary) 1px 1px 80px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 				h3 {
 					margin-bottom: rem-calc (20);
@@ -60,6 +82,7 @@
 					font-size: rem-calc(32);
 					text-decoration: underline;
 					color: var(--secondary-color);
+          margin-bottom: rem-calc(20);
 				}
 
 				ol {
@@ -87,24 +110,45 @@
 				}
 
 				h2 {
-					top: rem-calc(35);
-					font-size: rem-calc(30);
+          border: 1px solid red;
+          position: absolute;
+          left: rem-calc(250);
+					top: rem-calc(52);
+					font-size: rem-calc(25);
 				}
 			}
 
 			.pokemon__status {
 				position: relative;
 
+        .description{
+          position: relative;
+          top: rem-calc(100);
+          margin: 0 auto;
+
+          max-width:rem-calc(250);
+          z-index: 99;
+
+          h3{
+            font-weight: 700;
+          }
+        }
+
 				img {
 					position: absolute;
-					top: rem-calc(-80);
-					left: rem-calc(0);
-					max-width: rem-calc(100);
+					top: rem-calc(-150);
+					left: rem-calc(30);
+					max-width: rem-calc(120);
 				}
 
 				&__statistics {
 					min-height: 57vh;
 					padding-top: rem-calc(50);
+
+          h3, ol{
+            position: relative;
+            top: rem-calc(50);
+          }
 				}
 			}
 

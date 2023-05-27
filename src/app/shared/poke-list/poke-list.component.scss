@@ -3,10 +3,14 @@
 :host{
 
   .listagem{
-    display: flex;
+    position: relative;
     justify-content: center;
+    margin: 0 auto;
+
+    display: flex;
     flex-wrap: wrap;
-    width: 90;
+
+    max-width: 90vw;
     margin-top: rem-calc(20);
 
     .pokemon{
@@ -15,10 +19,9 @@
 
       background: var(--branco);
 
-      height: rem-calc(240);
-      min-width: rem-calc(220);
+      height: rem-calc(220);
+      min-width: rem-calc(200);
       width: 12%;
-
 
       margin-top: rem-calc(20);
       margin-right: rem-calc(20);
@@ -34,7 +37,7 @@
 
       &__status{
         h2{
-          width: rem-calc(230);
+          width: rem-calc(180);
           display: flex;
           justify-content: space-between;
 
@@ -57,7 +60,7 @@
             justify-content: center;
             align-items: center;
 
-            border-radius: rem-calc(50);
+            border-radius: rem-calc(10);
 
             width: rem-calc(60);
             margin-bottom: rem-calc(5);
@@ -79,8 +82,8 @@
         bottom: rem-calc(60);
 
         img{
-          width: rem-calc(160);
-          max-height: rem-calc(160);
+          width: rem-calc(140);
+          max-height: rem-calc(140);
         }
       }
     }
