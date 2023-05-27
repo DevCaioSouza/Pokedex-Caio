@@ -10,6 +10,5 @@ export class PokeSearchComponent {
 
   public search(value: string){
     this.emitSearch.emit(value)
-
   }
 }

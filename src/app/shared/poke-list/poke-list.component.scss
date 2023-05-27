@@ -4,6 +4,7 @@
 
   .listagem{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 70vw;
     margin-top: rem-calc(20);
@@ -15,6 +16,7 @@
       background: var(--branco);
 
       height: rem-calc(240);
+      min-width: rem-calc(220);
       width: 15%;
 
 
@@ -43,11 +45,6 @@
 
           margin-bottom: rem-calc(10);
         }
-
-        // h2 span{
-        //   position: relative;
-
-        // }
 
         ul{
           display: flex;
