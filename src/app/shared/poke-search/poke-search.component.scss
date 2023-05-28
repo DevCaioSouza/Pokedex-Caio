@@ -1,6 +1,8 @@
 @import '../../../config-scss/rem-calc.scss';
 
 :host{
+  font-family: Nunito;
+
   .upper-text{
     position: relative;
     margin: 0 auto;
