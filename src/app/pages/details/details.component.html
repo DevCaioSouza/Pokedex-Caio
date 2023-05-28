@@ -2,11 +2,10 @@
 <poke-header></poke-header>
 
 <main>
-
   <ng-template [ngIf]="isLoading">
     <section class="pokemon__names">
-      <h1>{{pokemon[0].name}}</h1>
-      <h2>{{'#' + pokemon[0].id}}</h2>
+      <h1>{{ pokemon[0].name }}</h1>
+      <h2>{{ "#" + pokemon[0].id }}</h2>
     </section>
 
     <section class="pokemon__status">
@@ -18,7 +17,7 @@
       <img
         [src]="pokemon[0].sprites.other.dream_world.front_default"
         [alt]="pokemon[0].name"
-      >
+      />
 
       <article class="pokemon__status__statistics fadeIn">
         <section>
@@ -26,27 +25,24 @@
 
           <ol>
             <li *ngFor="let value of pokemon[0].stats">
-                {{ value.stat.name }}
-
-              <strong>
-                {{ value.base_stat }}
-              </strong>
+              {{ value.stat.name }}
             </li>
-          </ol><br>
-
-          <ol>
-            <li *ngFor="let value of pokemon[0].types">
-                {{ 'tipo: ' + value.type.name }}
+            <li *ngFor="let value of pokemon[0].stats">
+              <mat-progress-bar
+              [value]="value.base_stat"
+              class="progress"
+              >
+              {{ value.base_stat }}
+              </mat-progress-bar>
             </li>
-
-
+            <li *ngFor="let value of pokemon[0].types" class="types">
+              {{ "tipo: " + value.type.name }}
+            </li>
           </ol>
-
+          <br />
         </section>
 
-        <a [routerLink]="['']" class="btn btn__secondary">
-          Voltar
-        </a>
+        <a [routerLink]="['']" class="btn btn__secondary"> Voltar </a>
       </article>
     </section>
   </ng-template>
@@ -56,5 +52,5 @@
     alt="Deu erro na mostragem do pokemon"
     width="100%"
     *ngIf="apiError"
-  >
+  />
 </main>

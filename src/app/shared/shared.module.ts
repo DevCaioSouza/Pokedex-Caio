@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 //Components
 import { PokeHeaderComponent } from './poke-header/poke-header.component';
@@ -22,7 +24,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatProgressBarModule
   ]
 })
 export class SharedModule { }

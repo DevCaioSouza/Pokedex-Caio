@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { RoutingModule } from './routing.module';
 import { SharedModule } from '../shared/shared.module';
 
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 //Pages
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
@@ -19,7 +21,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     CommonModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
+    MatProgressBarModule
   ]
 })
 export class PagesModule { }

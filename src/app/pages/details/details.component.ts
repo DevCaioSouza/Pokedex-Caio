@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 import { ActivatedRoute } from '@angular/router';
 import { forkJoin } from 'rxjs';
 
@@ -11,7 +13,6 @@ import { PokeApiService } from 'src/app/service/poke-api.service';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-
   private urlPokemon: string = 'https://pokeapi.co/api/v2/pokemon';
   private urlName: string = 'https://pokeapi.co/api/v2/pokemon-species';
 

@@ -1,6 +1,8 @@
 @import './rem-calc.scss';
 
 .btn {
+  position: relative;
+  top: rem-calc(-120);
 	display: flex;
 	justify-content: center;
 	align-items: center;
