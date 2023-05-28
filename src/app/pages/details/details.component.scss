@@ -62,8 +62,17 @@
         top: rem-calc(230);
         right: rem-calc(120);
         z-index: 99;
-				max-width: rem-calc(150);
+				width: rem-calc(150);
+        height: rem-calc(150);
 			}
+
+      .frame{
+        width: rem-calc(250);
+        height: rem-calc(250);
+
+        left: rem-calc(355);
+        top: rem-calc(175);
+      }
 
 			&__statistics {
         position: relative;
@@ -124,6 +133,14 @@
         img{
           left: rem-calc(350);
         }
+
+        .frame{
+          top: rem-calc(220);
+          left: rem-calc(340);
+
+          height: rem-calc(180);
+          width: rem-calc(180)
+        }
       }
     }
 
@@ -169,8 +186,16 @@
 					position: absolute;
 					top: rem-calc(-50);
 					left: rem-calc(25);
-					max-width: rem-calc(120);
+					width: rem-calc(120);
 				}
+
+        .frame{
+          top: rem-calc(-35);
+          left: rem-calc(15);
+
+          height: rem-calc(140);
+          width: rem-calc(150)
+        }
 
 				&__statistics {
           position: relative;

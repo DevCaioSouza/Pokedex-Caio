@@ -1,8 +1,7 @@
-@import '../../../config-scss/rem-calc.scss';
+@import "../../../config-scss/rem-calc.scss";
 
-:host{
-
-  .listagem{
+:host {
+  .listagem {
     position: relative;
     justify-content: center;
     margin: 0 auto;
@@ -13,7 +12,7 @@
     max-width: 90vw;
     margin-top: rem-calc(20);
 
-    .pokemon{
+    .pokemon {
       position: relative;
       display: flex;
 
@@ -29,14 +28,13 @@
       padding: rem-calc(20);
 
       border-radius: rem-calc(10);
-      box-shadow: var(--font-primary) 10px -30px 50px -30px inset, rgba(0, 0, 0, 0.1) 0px 5px 15px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 
       text-decoration: none;
       color: var(--font-primary);
 
-
-      &__status{
-        h2{
+      &__status {
+        h2 {
           width: rem-calc(180);
           display: flex;
           justify-content: space-between;
@@ -49,11 +47,11 @@
           margin-bottom: rem-calc(10);
         }
 
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
 
-          li{
+          li {
             background: var(--primary-color);
 
             display: flex;
@@ -68,7 +66,8 @@
         }
       }
 
-      &__image{
+      &__image {
+        z-index: 100;
         position: absolute;
 
         display: flex;
@@ -78,12 +77,25 @@
         width: rem-calc(110);
         height: rem-calc(90);
 
-        right: rem-calc(45);
+        right: rem-calc(25);
         bottom: rem-calc(60);
 
-        img{
+        img {
           width: rem-calc(140);
           max-height: rem-calc(140);
+        }
+      }
+
+      .corner-frame {
+        img {
+          position: relative;
+          left: rem-calc(-195);
+          top: rem-calc(115);
+
+          width: rem-calc(230);
+          height: rem-calc(120);
+
+          border-bottom-right-radius: rem-calc(10);
         }
       }
     }

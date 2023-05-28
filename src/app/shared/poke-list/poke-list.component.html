@@ -9,6 +9,7 @@
       *ngIf="pokemon.status"
     >
       <section class="pokemon__status">
+
         <h2>
           <div>
             {{ pokemon.name | titlecase }}
@@ -40,6 +41,10 @@
           [src]="pokemon.status.sprites.other.dream_world.front_default"
           [alt]="pokemon.name"
         />
+      </section>
+
+      <section class="corner-frame">
+        <img src="../../../assets/corner1.jpg" alt="">
       </section>
     </a>
   </ng-template>
