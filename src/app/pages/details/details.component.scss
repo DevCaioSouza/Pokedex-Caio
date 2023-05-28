@@ -18,7 +18,6 @@
         margin: 0 auto;
         top: rem-calc(50);
         left: rem-calc(-30);
-        border: 1px solid red;
         font-style: italic;
 				color: var(--font-primary);
 				font-size: rem-calc(50);
@@ -56,19 +55,20 @@
       }
 
 			img {
-				position: relative;
+        //precisa ser position absolute, senão quebra a página
+				position: absolute;
         margin: 0 auto;
-        top: rem-calc(150);
+        top: rem-calc(200);
         left: rem-calc(500);
 
 
         z-index: 99;
-				max-width: rem-calc(200);
+				max-width: rem-calc(150);
 			}
 
 			&__statistics {
         position: relative;
-        top: rem-calc(-190);
+        top: rem-calc(15);
 
 				display: flex;
 				flex-direction: column;
@@ -125,15 +125,17 @@
 				h1 {
           z-index: 200;
           position: relative;
-          left: rem-calc(60);
+          left: rem-calc(110);
+          top: rem-calc(0);
 					font-size: rem-calc(30);
 				}
 
 				h2 {
-          position: absolute;
-          right: rem-calc(-35);
+          position: relative;
+          // right: rem-calc(90);
+          // left: rem-calc();
 					top: rem-calc(52);
-					font-size: rem-calc(25);
+					font-size: rem-calc(30);
 				}
 			}
 
@@ -145,7 +147,7 @@
           top: rem-calc(100);
           margin: 0 auto;
 
-          max-width:rem-calc(250);
+          max-width:rem-calc(350);
           z-index: 99;
 
           h3{
@@ -165,7 +167,7 @@
           top: rem-calc(10);
 					min-height: 57vh;
 					padding-top: rem-calc(50);
-          width:100vw;
+          width:80vw;
 
           h3, ol{
             position: relative;
