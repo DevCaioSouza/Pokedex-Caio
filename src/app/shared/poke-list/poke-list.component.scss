@@ -53,14 +53,11 @@
 
           li {
             background: var(--primary-color);
-
             display: flex;
-            justify-content: center;
-            align-items: center;
 
             border-radius: rem-calc(10);
 
-            width: rem-calc(60);
+            width: rem-calc(120);
             margin-bottom: rem-calc(5);
           }
         }
