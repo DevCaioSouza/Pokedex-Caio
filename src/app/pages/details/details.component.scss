@@ -59,11 +59,11 @@
 			img {
         //precisa ser position absolute, senão quebra a página
 				position: absolute;
-        top: rem-calc(230);
-        right: rem-calc(120);
+        top: rem-calc(200);
+        right: rem-calc(105);
         z-index: 99;
-				width: rem-calc(150);
-        height: rem-calc(150);
+				width: rem-calc(200);
+        height: rem-calc(200);
 			}
 
       @keyframes rotation {
@@ -191,9 +191,10 @@
 
 				img {
 					position: absolute;
-					top: rem-calc(-50);
+					top: rem-calc(-40);
 					left: rem-calc(25);
 					width: rem-calc(120);
+					height: rem-calc(120);
 				}
 
         .frame{
