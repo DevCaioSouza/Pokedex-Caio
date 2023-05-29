@@ -50,4 +50,13 @@
       }
     }
   }
+
+  @media (max-width: 420px){
+    form{
+      width: 80vw;
+      input{
+        width: 75vw;
+      }
+    }
+  }
 }
