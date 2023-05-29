@@ -11,7 +11,6 @@
 
     max-width: 90vw;
     margin-top: rem-calc(20);
-
     .pokemon {
       position: relative;
       display: flex;
@@ -19,8 +18,8 @@
       background: var(--branco);
 
       height: rem-calc(220);
-      min-width: rem-calc(200);
-      width: 12%;
+      // min-width: rem-calc(200);
+      width: rem-calc(160);
 
       margin-top: rem-calc(20);
       margin-right: rem-calc(20);
@@ -34,8 +33,12 @@
       color: var(--font-primary);
 
       &__status {
+        position: relative;
+        right: rem-calc(12);
+        top: rem-calc(-8);
         h2 {
-          width: rem-calc(180);
+          width: rem-calc(170);
+
           display: flex;
           justify-content: space-between;
 
@@ -43,7 +46,6 @@
           font-style: italic;
           font-weight: 700;
           color: var(--font-primary);
-
           margin-bottom: rem-calc(10);
         }
 
@@ -74,7 +76,7 @@
         height: rem-calc(90);
 
         right: rem-calc(25);
-        bottom: rem-calc(60);
+        bottom: rem-calc(40);
 
         img {
           width: rem-calc(140);
@@ -85,10 +87,10 @@
       .corner-frame {
         img {
           position: relative;
-          left: rem-calc(-195);
+          left: rem-calc(-185);
           top: rem-calc(115);
 
-          width: rem-calc(230);
+          width: rem-calc(190);
           height: rem-calc(120);
 
           border-bottom-right-radius: rem-calc(10);
