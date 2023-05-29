@@ -52,7 +52,12 @@
   }
 
   @media (max-width: 420px){
+    .upper-text{
+      padding: rem-calc(20);
+    }
+
     form{
+      left: rem-calc(-15);
       width: 80vw;
       input{
         width: 75vw;
