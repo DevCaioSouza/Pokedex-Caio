@@ -1,4 +1,4 @@
-Olá! Muito obrigado pela oportunidade de poder realizar esse trabalho para a equipe do Inicie!
+Esta é uma PokeDex desenvolvida com Angular, para uma entrevista de trabalho
 
 Aqui está o link para acessar a Pokedex que estou criando, com todas as funcionalidades até agora implementadas
 
