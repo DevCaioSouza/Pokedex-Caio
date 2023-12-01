@@ -4,14 +4,19 @@
   font-family: Nunito;
 
   .upper-text{
-    position: relative;
-    margin: 0 auto;
+    // position: relative;
+    // margin: 0 auto;
+    padding: 20px 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    max-width: rem-calc(470);
+    // max-width: rem-calc(470);
 
     font-size: rem-calc(35);
     font-weight: 700;
-    color: var(--font-primary)
+    color: var(--secondary-color)
   }
 
   .upper-text span{
